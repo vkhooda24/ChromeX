@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "RemindMe",
+  "version": "1",
+  "description": "Remind me the best of what saved earlier.",
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "reminder.png"
+    }
+  },
+  "icons": {
+    "128": "reminder.png"
+  },
+  "permissions": [
+    "declarativeContent",
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "minimum_chrome_version": "28"
+}
